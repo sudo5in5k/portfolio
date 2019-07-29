@@ -1,142 +1,199 @@
 <template>
-  <v-container>
-    <v-layout
-      text-center
-      wrap
-    >
+  <v-container id="container-full">
+    <v-layout text-xs-center wrap mt-5 px-3 py-3 id="home">
       <v-flex xs12>
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        ></v-img>
-      </v-flex>
-
-      <v-flex mb-4>
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1>
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank">Discord Community</a>
-        </p>
-      </v-flex>
-
-      <v-flex
-        mb-5
-        xs12
-      >
-        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-layout>
-      </v-flex>
-
-      <v-flex
-        xs12
-        mb-5
-      >
-        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-layout>
-      </v-flex>
-
-      <v-flex
-        xs12
-        mb-5
-      >
-        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-layout>
+        <span class="display-2 font-weight-bold">INTRODUCE</span>
       </v-flex>
     </v-layout>
+
+    <!-- My Profile -->
+    <v-card class="mx-auto" max-width="550" tile>
+      <v-list-item two-line>
+        <v-list-item-content>
+          <v-list-item-title class="display-2 font-weight-bold">Ussy</v-list-item-title>
+          <v-list-item-group v-model="job">
+            <v-list-item v-for="(job, i) in jobs" :key="i">
+              <v-list-item-icon>
+                <v-icon v-text="job.icon"></v-icon>
+              </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title v-text="job.text"></v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list-item-content>
+
+        <v-list-item-avatar tile size="250">
+          <v-img class="white--text" height="200px" v-bind:src="require('@/assets/ussy.jpg')"></v-img>
+        </v-list-item-avatar>
+      </v-list-item>
+    </v-card>
+
+    <!-- Skill -->
+    <v-layout text-xs-center mt-10 px-3 py-3>
+      <v-flex xs12>
+        <span class="display-2 font-weight-bold white--text" id="skills">Skills</span>
+      </v-flex>
+      <v-flex xs12 mt-10>
+        <headline title="Skills" />
+        <cloud
+          :data="skills"
+          :font-size-mapper="fontSizeMapper"
+          :on-word-click="onWordClick"
+          :font="font"
+        />
+      </v-flex>
+    </v-layout>
+
+    <!-- Career -->
+    <v-layout text-xs-center mt-10 px-3 py-3>
+      <v-flex xs12>
+        <span class="display-2 font-weight-bold" id="career">Career</span>
+      </v-flex>
+    </v-layout>
+    <v-layout px-5 py-5>
+      <v-flex xs12>
+        <v-timeline>
+          <!-- non career equaled to student -->
+          <v-timeline-item color="green" fill-dot left>
+            <v-card>
+              <v-card-title class="green">
+                <h2 class="display-1 white--text font-weight-light">Tokyo University of Science</h2>
+              </v-card-title>
+              <v-container>
+                <v-layout>
+                  <v-flex xs10>Majored in Machine Learning (Classifier)</v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </v-timeline-item>
+
+          <!-- 1st career -->
+          <v-timeline-item color="blue" fill-dot right>
+            <v-card>
+              <v-card-title class="blue">
+                <h2 class="display-1 white--text font-weight-light">KDDI</h2>
+              </v-card-title>
+              <v-container>
+                <v-layout>
+                  <v-flex xs10>Android App Engineer</v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </v-timeline-item>
+
+          <!-- 2nd career -->
+          <v-timeline-item color="red" fill-dot left small>
+            <v-card>
+              <v-card-title class="red justify-end">
+                <h2 class="display-1 mr-3 white--text font-weight-light">Yahoo! JAPAN</h2>
+              </v-card-title>
+              <v-container>
+                <v-layout>
+                  <v-flex xs10>Android App Engineer, Scrum Master, QA Engineer</v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </v-timeline-item>
+
+          <!-- 3rd career -->
+          <v-timeline-item color="cyan lighten-1" fill-dot right large>
+            <v-card>
+              <v-card-title class="cyan lighten-1">
+                <h2 class="display-1 white--text font-weight-light">Supporterz</h2>
+              </v-card-title>
+              <v-container>
+                <v-layout>
+                  <v-flex
+                    xs10
+                  >Career advisor for engineers, Supporterz colab organizer, Engineer, Web marketer</v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </v-timeline-item>
+        </v-timeline>
+      </v-flex>
+    </v-layout>
+    <!-- 4th activity -->
+    <v-layout text-xs-center wrap mt-5 px-3 py-3 id="activity">
+      <v-flex xs12>
+        <span class="display-2 font-weight-bold">ACTIVITY</span>
+      </v-flex>
+    </v-layout>
+    <!-- WIP -->
   </v-container>
 </template>
 
 <script>
+import Cloud from "vue-d3-cloud";
+
 export default {
+  components: {
+    Cloud
+  },
   data: () => ({
-    ecosystem: [
+    jobs: [
       {
-        text: 'vuetify-loader',
-        href: 'https://github.com/vuetifyjs/vuetify-loader',
+        text: "キャリアアドバイザー",
+        icon: "mdi-account"
       },
       {
-        text: 'github',
-        href: 'https://github.com/vuetifyjs/vuetify',
+        text: "勉強会オーガナイザー",
+        icon: "mdi-account"
       },
       {
-        text: 'awesome-vuetify',
-        href: 'https://github.com/vuetifyjs/awesome-vuetify',
+        text: "エンジニア",
+        icon: "mdi-account"
       },
+      {
+        text: "WEBマーケター",
+        icon: "mdi-account"
+      }
     ],
-    importantLinks: [
-      {
-        text: 'Documentation',
-        href: 'https://vuetifyjs.com',
-      },
-      {
-        text: 'Chat',
-        href: 'https://community.vuetifyjs.com',
-      },
-      {
-        text: 'Made with Vuetify',
-        href: 'https://madewithvuejs.com/vuetify',
-      },
-      {
-        text: 'Twitter',
-        href: 'https://twitter.com/vuetifyjs',
-      },
-      {
-        text: 'Articles',
-        href: 'https://medium.com/vuetify',
-      },
+    skills: [
+      { text: "Vue.js", value: 20 },
+      { text: "HTML5", value: 40 },
+      { text: "CSS", value: 30 },
+      { text: "Laravel", value: 30 },
+      { text: "Java", value: 70 },
+      { text: "Kotlin", value: 100 },
+      { text: "Python", value: 100 },
+      { text: "Django", value: 50 },
+      { text: "Machine Learning", value: 70 },
+      { text: "Ruby", value: 70 },
+      { text: "RubyonRails", value: 30 },
+      { text: "Shell", value: 40 },
+      { text: "Selenium", value: 30 },
+      { text: "Test Case Design", value: 80 },
+      { text: "SQL", value: 70 },
+      { text: "Docker", value: 40 },
+      { text: "Jenkins", value: 60 },
+      { text: "AWS", value: 30 },
+      { text: "AWS Lambda", value: 40 },
+      { text: "Google Analytics", value: 30 },
+      { text: "Google Apps Script", value: 40 },
+      { text: "git/Github", value: 80 },
+      { text: "JIRA", value: 80 },
+      { text: "Confluence", value: 80 },
+      { text: "Redmine", value: 60 },
+      { text: "Slack", value: 100 }
     ],
-    whatsNext: [
-      {
-        text: 'Explore components',
-        href: 'https://vuetifyjs.com/components/api-explorer',
-      },
-      {
-        text: 'Select a layout',
-        href: 'https://vuetifyjs.com/layout/pre-defined',
-      },
-      {
-        text: 'Frequently Asked Questions',
-        href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-      },
-    ],
-  }),
+    fontSizeMapper: word => Math.log2(word.value) * 9,
+    onWordClick: () => {},
+    font: "Impact"
+  })
 };
 </script>
+
+<style>
+#container-full {
+  padding: 0;
+  max-width: 1000px;
+}
+.v-carousel {
+  box-shadow: 0 0 0 0;
+}
+.wordCloud >>> svg {
+  width: 100%;
+}
+</style>
