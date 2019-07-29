@@ -7,7 +7,6 @@
     </v-layout>
 
     <!-- My Profile -->
-    <!-- Twitter, Facebook, Wantedly, Github, Qiita, connpass icon-->
     <v-card class="mx-auto" max-width="550" tile>
       <v-list-item two-line>
         <v-list-item-content>
@@ -121,7 +120,7 @@
         <span class="display-2 font-weight-bold">ACTIVITY</span>
       </v-flex>
     </v-layout>
-    <!-- WIP spekerdeck-->
+    <!-- WIP -->
   </v-container>
 </template>
 
