@@ -190,7 +190,7 @@
             <v-timeline-item color="cyan lighten-1" fill-dot right large>
               <v-card>
                 <v-card-title class="cyan lighten-1">
-                  <h2 class="display-1 white--text font-weight-bold">Supporterz</h2>
+                  <h2 class="display-1 white--text font-weight-bold">サポーターズ</h2>
                 </v-card-title>
                 <v-container>
                   <v-layout wrap>
@@ -221,14 +221,41 @@
       </v-layout>
     </section>
 
+    <!-- 4th activity -->
+    <v-layout text-xs-center wrap mt-5 px-3 py-3 id="activity">
+      <v-flex xs12>
+        <span class="display-2 font-weight-bold">Activity</span>
+      </v-flex>
+    </v-layout>
     <section>
-      <!-- 4th activity -->
-      <v-layout text-xs-center wrap mt-5 px-3 py-3 id="activity">
-        <v-flex xs12>
-          <span class="display-2 font-weight-bold">Activity</span>
-        </v-flex>
-      </v-layout>
       <!-- WIP  speakerdeck-->
+      <v-card class="mx-auto my-8" max-width="860">
+        <v-container fluid grid-list-md pa-2>
+          <v-layout wrap>
+            <v-flex v-for="card in cards" :key="card.title" v-bind="{ [`xs${card.flex}`]: true }">
+              <v-card color="gray">
+                <a v-bind:href="card.link">
+                  <v-img :src="card.src" class="white--text" height="300px" />
+                </a>
+
+                <v-card-title class="fill-height align-end green--text" v-text="card.title"></v-card-title>
+                <v-spacer />
+                <v-card-text class="white--text font-weight-bold">{{card.description}}</v-card-text>
+                <v-card-actions>
+                  <v-layout v-if="card.source != ''" justify-end>
+                    <a v-bind:href="card.source">
+                      <img
+                        src="https://visualpharm.com/assets/171/Play%20Property-595b40b65ba036ed117d158a.svg"
+                        height="50px"
+                      />
+                    </a>
+                  </v-layout>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
     </section>
   </v-container>
 </template>
@@ -299,6 +326,37 @@ export default {
       { text: "Confluence", value: 80 },
       { text: "Redmine", value: 60 },
       { text: "Slack", value: 100 }
+    ],
+    cards: [
+      {
+        title: "サポーターズCoLab",
+        src: "https://corp.supporterz.jp/img/colab-logo.png",
+        link: "https://supporterzcolab.com/",
+        description: "勉強会の企画・主催・運営を一括で担当しています",
+        source: "",
+        flex: 12
+      },
+      {
+        title: "サポーターズCoLab",
+        src:
+          "https://img.supporterzcolab.com/thumbs/c3/38/c3389c9e0f55964d2c9ce11e282175c7.png",
+        link: "https://supporterzcolab.com/event/891/",
+        description:
+          "キャリアアップのためのエンジニアにもわかるマーケティング・ブランディングの話をしました",
+        source:
+          "https://speakerdeck.com/sudo5in5k/enziniafalsetamefalsemaketeinguburandeinguru-men",
+        flex: 6
+      },
+      {
+        title: "転職LT#5",
+        src:
+          "https://connpass-tokyo.s3.amazonaws.com/thumbs/e0/f4/e0f4dc40bacd17cc0266bf48c510824f.png",
+        link: "https://ex-sier.connpass.com/event/136868/",
+        description:
+          "転職LTにてエンジニア兼中途エージェントとして、転職を成功させるにはどうすればいいかお話しました",
+        source: "https://speakerdeck.com/sudo5in5k/zhuan-zhi-lt-number-5",
+        flex: 6
+      }
     ],
     fontSizeMapper: word => Math.log2(word.value) * 9,
     onWordClick: () => {},
