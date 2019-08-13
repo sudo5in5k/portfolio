@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar app>
+    <v-app-bar app fixed>
       <v-toolbar-title class="headline">
         <span class="font-weight-light">Ussy's portfolio</span>
       </v-toolbar-title>
@@ -12,7 +12,7 @@
         :href="next.href"
         class="my-2"
       >{{ next.text }}</v-btn>
-    </v-toolbar>
+    </v-app-bar>
     <v-content>
       <HelloWorld />
     </v-content>

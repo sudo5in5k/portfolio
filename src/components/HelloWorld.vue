@@ -1,8 +1,8 @@
 <template>
   <v-container id="container-full">
-    <v-layout text-xs-center wrap mt-5 px-3 py-3 id="home">
+    <v-layout text-xs-center wrap mt-5 px-3 py-3>
       <v-flex xs12>
-        <span class="display-2 font-weight-bold">Introduce</span>
+        <span class="display-2 font-weight-bold" id="home">Introduce</span>
       </v-flex>
     </v-layout>
 
@@ -67,7 +67,7 @@
     <section>
       <v-layout text-xs-center mt-10 px-3 py-3>
         <v-flex xs12>
-          <span class="display-2 font-weight-bold white--text" id="skills">Skills</span>
+          <a class="display-2 font-weight-bold white--text anchor" id="skills">Skill</a>
         </v-flex>
         <v-flex xs12 mt-10>
           <headline title="Skills" />
@@ -85,7 +85,7 @@
     <section>
       <v-layout text-xs-center mt-10 px-3 py-3>
         <v-flex xs12>
-          <span class="display-2 font-weight-bold" id="career">Career</span>
+          <a class="display-2 font-weight-bold white--text anchor" id="career">Career</a>
         </v-flex>
       </v-layout>
       <v-layout px-5 py-5>
@@ -222,13 +222,12 @@
     </section>
 
     <!-- 4th activity -->
-    <v-layout text-xs-center wrap mt-5 px-3 py-3 id="activity">
+    <v-layout text-xs-center wrap mt-5 px-3 py-3>
       <v-flex xs12>
-        <span class="display-2 font-weight-bold">Activity</span>
+        <a class="display-2 font-weight-bold white--text anchor" id="activity">Activity</a>
       </v-flex>
     </v-layout>
     <section>
-      <!-- WIP  speakerdeck-->
       <v-card class="mx-auto my-8" max-width="860">
         <v-container fluid grid-list-md pa-2>
           <v-layout wrap>
@@ -369,6 +368,11 @@ export default {
 #container-full {
   padding: 0;
   max-width: 1000px;
+}
+a.anchor {
+  display: block;
+  padding-top: 80px;
+  margin-top: -80px;
 }
 .v-carousel {
   box-shadow: 0 0 0 0;
