@@ -331,7 +331,18 @@ export default {
         title: "サポーターズCoLab",
         src: "https://corp.supporterz.jp/img/colab-logo.png",
         link: "https://supporterzcolab.com/",
-        description: "勉強会の企画・主催・運営を一括で担当しています",
+        description:
+          "若手エンジニア向け勉強会PFのマネージャーとして企画・主催・運営を担当しています",
+        source: "",
+        flex: 12
+      },
+      {
+        title: "CareerKaigi",
+        src:
+          "https://connpass-tokyo.s3.amazonaws.com/thumbs/3e/65/3e65d001886c860feedcff1701599601.png",
+        link: "https://career-kaigi.connpass.com/",
+        description:
+          "エンジニアのキャリアの意思決定を助けるため主催者として活動しています",
         source: "",
         flex: 12
       },
@@ -354,6 +365,16 @@ export default {
         description:
           "転職LTにてエンジニア兼中途エージェントとして、転職を成功させるにはどうすればいいかお話しました",
         source: "https://speakerdeck.com/sudo5in5k/zhuan-zhi-lt-number-5",
+        flex: 6
+      },
+      {
+        title: "サポーターズCoLab",
+        src:
+          "https://img.supporterzcolab.com/thumbs/89/76/897651dd1ab0c17d79a31e57f7a228b5.png",
+        link: "https://supporterzcolab.com/event/901/",
+        description:
+          "17卒のエンジニアが集まったLT会でこれまでのキャリアについてお話しました",
+        source: "https://speakerdeck.com/sudo5in5k/17zu-mitoatupu",
         flex: 6
       }
     ],
