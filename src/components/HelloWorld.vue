@@ -376,6 +376,17 @@ export default {
           "17卒のエンジニアが集まったLT会でこれまでのキャリアについてお話しました",
         source: "https://speakerdeck.com/sudo5in5k/17zu-mitoatupu",
         flex: 6
+      },
+      {
+        title: "CareerKaigi#1",
+        src:
+          "https://connpass-tokyo.s3.amazonaws.com/thumbs/3e/65/3e65d001886c860feedcff1701599601.png",
+        link: "https://career-kaigi.connpass.com/",
+        description:
+          "経歴と、なぜ私が今エージェントなのか、今後どうなりたいか宣言をしました",
+        source:
+          "https://speakerdeck.com/sudo5in5k/nazesi-haezientoninatutafalseka",
+        flex: 6
       }
     ],
     fontSizeMapper: word => Math.log2(word.value) * 9,
