@@ -11,7 +11,9 @@
     "core-js": "^2.6.5",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
+    "vue-analytics": "^5.17.2",
     "vue-d3-cloud": "^0.2.0",
+    "vue-head": "^2.1.2",
     "vue-router": "^3.0.3",
     "vuetify": "^2.0.0"
   },
