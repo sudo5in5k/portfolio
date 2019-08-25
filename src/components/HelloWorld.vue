@@ -69,16 +69,38 @@
         <v-flex xs12>
           <a class="display-2 font-weight-bold white--text anchor" id="skills">Skill</a>
         </v-flex>
-        <v-flex xs12 mt-10>
-          <headline title="Skills" />
-          <cloud
-            :data="skills"
-            :font-size-mapper="fontSizeMapper"
-            :on-word-click="onWordClick"
-            :font="font"
-          />
-        </v-flex>
       </v-layout>
+      <v-card class="mx-auto my-8" max-width="860" min-width="344" outlined>
+        <v-container fluid grid-list-md pa-2>
+          <v-layout wrap>
+            <v-flex
+              v-for="skill in skills"
+              :key="skill.text"
+              v-bind="{ [`xs${skill.flex}`]: true }"
+            >
+              <v-card color="gray" class="mx-auto" outlined>
+                <v-list-item three-line>
+                  <v-list-item-content>
+                    <v-list-item-title class="green--text headline mb-1" v-text="skill.text"></v-list-item-title>
+                    <v-rating
+                      :value="skill.value"
+                      color="amber"
+                      half-increments
+                      dense
+                      size="14"
+                      readonly
+                    ></v-rating>
+                    <v-list-item-subtitle class="white--text my-2">{{skill.desc}}</v-list-item-subtitle>
+                  </v-list-item-content>
+                  <v-list-item-avatar tile size="50">
+                    <v-img :src="skill.icon"></v-img>
+                  </v-list-item-avatar>
+                </v-list-item>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
     </section>
 
     <!-- Career -->
@@ -139,7 +161,7 @@
                         <li>Retrofit, Okhttp3, Gson, Picasso, Zxing</li>
                         <li>JUnit</li>
                         <li>Numpy, Scipy, Pandas, requests, Selenium</li>
-                        <li>git, Github Enterprise, Charles, Jenkins, Sider, Slack</li>
+                        <li>Git, Github Enterprise, Charles, Jenkins, Sider, Slack</li>
                       </ul>
                     </v-flex>
                   </v-layout>
@@ -260,12 +282,8 @@
 </template>
 
 <script>
-import Cloud from "vue-d3-cloud";
-
 export default {
-  components: {
-    Cloud
-  },
+  components: {},
   data: () => ({
     bioBody: `大学院にて機械学習を専攻後、新卒でAndroidアプリエンジニアに。ニュースアプリの新規タブ追加、広告追加、Kotlinへのリファクタリング、Jenkinsを用いたCI/CD整備、スクラム開発の推進を担当。
     その後転職し、引き続きAndroidアプリエンジニアとしてブラウザーアプリの開発担当、QAやスクラムマスターも付随的に行う。\n
@@ -296,35 +314,200 @@ export default {
         text: "Wantedly",
         link: "https://www.wantedly.com/users/78524630",
         icon: require("@/assets/wantedly-logo.png")
+      },
+      {
+        text: "はてなブログ",
+        link: "https://ussylog.hatenablog.com/",
+        icon: require("@/assets/hatenablog-logo.png")
       }
     ],
     skills: [
-      { text: "Vue.js", value: 20 },
-      { text: "HTML5", value: 40 },
-      { text: "CSS", value: 30 },
-      { text: "Laravel", value: 30 },
-      { text: "Java", value: 70 },
-      { text: "Kotlin", value: 100 },
-      { text: "Python", value: 100 },
-      { text: "Django", value: 50 },
-      { text: "Machine Learning", value: 70 },
-      { text: "Ruby", value: 70 },
-      { text: "RubyonRails", value: 30 },
-      { text: "Shell", value: 40 },
-      { text: "Selenium", value: 30 },
-      { text: "Test Case Design", value: 80 },
-      { text: "SQL", value: 70 },
-      { text: "Docker", value: 40 },
-      { text: "Jenkins", value: 60 },
-      { text: "AWS", value: 30 },
-      { text: "AWS Lambda", value: 40 },
-      { text: "Google Analytics", value: 30 },
-      { text: "Google Apps Script", value: 40 },
-      { text: "git/Github", value: 80 },
-      { text: "JIRA", value: 80 },
-      { text: "Confluence", value: 80 },
-      { text: "Redmine", value: 60 },
-      { text: "Slack", value: 100 }
+      {
+        text: "HTML5",
+        value: "3.0",
+        desc: "MVCフレームワーク時のView作成の業務経験あり",
+        icon: "https://image.flaticon.com/icons/svg/1216/1216733.svg",
+        flex: 12
+      },
+      {
+        text: "CSS3",
+        value: "3.0",
+        desc: "簡単なmargin/paddingの調整、Bootstrapでの要素作成の業務経験あり",
+        icon: require("@/assets/css3-logo.svg"),
+        flex: 12
+      },
+      {
+        text: "Vue.js",
+        value: "3.0",
+        desc: "自主学習にて簡単なレスポンシブWebページ作成経験あり",
+        icon: "https://jp.vuejs.org//images/logo.png",
+        flex: 12
+      },
+      {
+        text: "Laravel",
+        value: "3.0",
+        desc: "ファイルアップロードのサイトの改修の業務経験あり",
+        icon:
+          "https://cdn4.iconfinder.com/data/icons/logos-3/256/laravel-512.png",
+        flex: 12
+      },
+      {
+        text: "Java",
+        value: "4.5",
+        desc:
+          "オブジェクト指向・可読性の高いコード・非同期処理を扱うコードが書ける、業務経験あり",
+        icon: "https://cdn.icon-icons.com/icons2/195/PNG/256/Java_23404.png",
+        flex: 12
+      },
+      {
+        text: "Kotlin",
+        value: "5",
+        desc:
+          "オブジェクト指向・可読性の高いコード・非同期処理を扱うコードが書ける、業務経験あり",
+        icon: "https://cdn.worldvectorlogo.com/logos/kotlin-1.svg",
+        flex: 12
+      },
+      {
+        text: "Python",
+        value: "4.5",
+        desc:
+          "大学院にて機械学習・データマイニングに利用、業務経験にて自動化をする際に利用、コーディングテストにて使用",
+        icon:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png",
+        flex: 12
+      },
+      {
+        text: "Django",
+        value: "4",
+        desc: "業務経験にてファイルアップロードサイトの自作経験あり",
+        icon: "https://cdn.iconscout.com/icon/free/png-512/django-1-282754.png",
+        flex: 12
+      },
+      {
+        text: "Ruby",
+        value: "3.5",
+        desc: "自主学習にて簡単なコーディングが可能",
+        icon: "https://cdn.worldvectorlogo.com/logos/ruby.svg",
+        flex: 12
+      },
+      {
+        text: "RubyonRails",
+        value: "3.5",
+        desc: "自主学習にてCRUDのポートフォリオサイトを作る際に利用",
+        icon: "https://pbs.twimg.com/media/CZGHPChUAAA3jqE.png",
+        flex: 12
+      },
+      {
+        text: "Shell",
+        value: "4.0",
+        desc: "業務経験にてAPIアクセス、サーバー接続、CI/CDにて利用",
+        icon:
+          "https://cdn.pixabay.com/photo/2013/07/12/14/48/bash-148836_640.png",
+        flex: 12
+      },
+      {
+        text: "Selenium",
+        value: "4.0",
+        desc: "業務自動化、自動テスト(整合性確認、スナップショット)に利用",
+        icon: "https://www.seleniumhq.org/images/big-logo.png",
+        flex: 12
+      },
+      {
+        text: "ソフトウェアテスト",
+        value: "4.5",
+        desc:
+          "業務にてテスト計画からテスト設計・テスト実施まで一括でチームをリードして担当した経験あり",
+        icon: "https://image.flaticon.com/icons/png/512/25/25154.png",
+        flex: 12
+      },
+      {
+        text: "SQL",
+        value: "4.0",
+        desc:
+          "INNER JOINや要約関数が利用可能、MySQLの運用資格所持、MySQL・Redashを業務にて利用経験あり",
+        icon:
+          "https://icons-for-free.com/iconfiles/png/512/development+logo+mysql+icon-1320184807686758112.png",
+        flex: 12
+      },
+      {
+        text: "Docker",
+        value: "3.5",
+        desc: "業務にてdocker-compose.ymlやDockerfileを用いた構築経験あり",
+        icon:
+          "https://www.docker.com/sites/default/files/social/docker_facebook_share.png",
+        flex: 12
+      },
+      {
+        text: "Jenkins",
+        value: "4.0",
+        desc: "業務にてCI/CD・テスト結果・警告数結果の監視経験あり",
+        icon:
+          "https://wiki.jenkins.io/download/attachments/2916393/headshot.png?version=1&modificationDate=1302753947000&api=v2",
+        flex: 12
+      },
+      {
+        text: "AWS",
+        value: "3.0",
+        desc:
+          "自主学習にてEC2インスタンス作成・Cloud Watchでの監視、Lambda・API gatewayでの簡単なAPI作成経験あり",
+        icon: require("@/assets/aws-logo.png"),
+        flex: 12
+      },
+      {
+        text: "Google Analytics",
+        value: "3.5",
+        desc:
+          "業務にてGoogle analytics構築、KPIに基づいた指標設定・運用の経験あり",
+        icon:
+          "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg",
+        flex: 12
+      },
+      {
+        text: "Google Apps Script",
+        value: "4",
+        desc: "業務にてSpreadsheetとの連携と通知、簡単なAPI作成経験あり",
+        icon:
+          "https://www.gstatic.com/images/branding/product/2x/apps_script_64dp.png",
+        flex: 12
+      },
+      {
+        text: "Git",
+        value: "4.5",
+        desc: "業務にてGit Flow/Github Flowに基づいた運用経験あり",
+        icon: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+        flex: 12
+      },
+      {
+        text: "JIRA",
+        value: "4.0",
+        desc: "業務にてチケット管理経験あり",
+        icon: "https://cdn.worldvectorlogo.com/logos/jira-3.svg",
+        flex: 12
+      },
+      {
+        text: "Confluence",
+        value: "4.0",
+        desc: "業務にてコード埋め込みを使用したドキュメント作成経験あり",
+        icon:
+          "https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_confluence-512.png",
+        flex: 12
+      },
+      {
+        text: "Redmine",
+        value: "4.5",
+        desc: "業務にてチケット管理経験、APIを使用したサービス連携経験あり",
+        icon: "http://www.redmine.org/attachments/3462/redmine_fluid_icon.png",
+        flex: 12
+      },
+      {
+        text: "Slack",
+        value: "5.0",
+        desc:
+          "業務にてワークスペース管理経験、API/incoming outgoing webhookを使用した各種サービス連携・自動化の経験あり",
+        icon:
+          "https://a.slack-edge.com/4a5c4/marketing/img/meta/slack_hash_256.png",
+        flex: 12
+      }
     ],
     cards: [
       {
@@ -363,7 +546,7 @@ export default {
           "https://connpass-tokyo.s3.amazonaws.com/thumbs/e0/f4/e0f4dc40bacd17cc0266bf48c510824f.png",
         link: "https://ex-sier.connpass.com/event/136868/",
         description:
-          "転職LTにてエンジニア兼中途エージェントとして、転職を成功させるにはどうすればいいかお話しました",
+          "転職LTにてエンジニア兼中途エージェントとして、転職を成功させるためのTipsを話しました",
         source: "https://speakerdeck.com/sudo5in5k/zhuan-zhi-lt-number-5",
         flex: 6
       },
@@ -373,7 +556,7 @@ export default {
           "https://img.supporterzcolab.com/thumbs/89/76/897651dd1ab0c17d79a31e57f7a228b5.png",
         link: "https://supporterzcolab.com/event/901/",
         description:
-          "17卒のエンジニアが集まったLT会でこれまでのキャリアについてお話しました",
+          "17卒のエンジニアが集まったLT会でこれまでの自分のキャリアについて話しました",
         source: "https://speakerdeck.com/sudo5in5k/17zu-mitoatupu",
         flex: 6
       },
@@ -383,7 +566,7 @@ export default {
           "https://connpass-tokyo.s3.amazonaws.com/thumbs/3e/65/3e65d001886c860feedcff1701599601.png",
         link: "https://career-kaigi.connpass.com/",
         description:
-          "経歴と、なぜ私が今エージェントなのか、今後どうなりたいか宣言をしました",
+          "自分の経歴と、なぜ私が今エージェントなのか、今後どうなりたいか宣言をしました",
         source:
           "https://speakerdeck.com/sudo5in5k/nazesi-haezientoninatutafalseka",
         flex: 6
@@ -408,9 +591,6 @@ a.anchor {
 }
 .v-carousel {
   box-shadow: 0 0 0 0;
-}
-.wordCloud >>> svg {
-  width: 100%;
 }
 div.biotext {
   line-height: 2em;

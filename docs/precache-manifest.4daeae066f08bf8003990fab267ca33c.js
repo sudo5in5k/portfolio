@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "4cb040d6281d0e8a3ed2",
-    "url": "/portfolio/css/app.4c23202d.css"
+    "revision": "83e83fdd1b1384f23cc6",
+    "url": "/portfolio/css/app.d1429a38.css"
   },
   {
-    "revision": "4cb040d6281d0e8a3ed2",
-    "url": "/portfolio/js/app.4ca1f618.js"
+    "revision": "83e83fdd1b1384f23cc6",
+    "url": "/portfolio/js/app.468115b5.js"
   },
   {
-    "revision": "074dde1096aee88c82d5",
-    "url": "/portfolio/css/chunk-vendors.138ab8c5.css"
+    "revision": "ca53456377ed617fa540",
+    "url": "/portfolio/css/chunk-vendors.a215aef9.css"
   },
   {
-    "revision": "074dde1096aee88c82d5",
-    "url": "/portfolio/js/chunk-vendors.a5de868b.js"
+    "revision": "ca53456377ed617fa540",
+    "url": "/portfolio/js/chunk-vendors.647f365e.js"
   },
   {
     "revision": "626ecc149649ec8ddb5853e12d87625c",
@@ -22,6 +22,10 @@ self.__precacheManifest = [
   {
     "revision": "c8e9775f56567a90632e04d60ff411b1",
     "url": "/portfolio/img/wantedly-logo.c8e9775f.png"
+  },
+  {
+    "revision": "2db97d69ba44f8da4663584e8197143f",
+    "url": "/portfolio/img/css3-logo.2db97d69.svg"
   },
   {
     "revision": "43ef3dfee7b402b1582db2ce241731f5",
@@ -40,7 +44,7 @@ self.__precacheManifest = [
     "url": "/portfolio/img/ussy.dc47641c.jpg"
   },
   {
-    "revision": "2b46b213fc843092a62ede2060b59ade",
+    "revision": "6bc5ac46873f37bdbd3a465c9aeec89f",
     "url": "/portfolio/index.html"
   },
   {

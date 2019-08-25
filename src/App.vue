@@ -33,7 +33,7 @@ export default {
         href: "#"
       },
       {
-        text: "Skills",
+        text: "Skill",
         href: "#skills"
       },
       {
