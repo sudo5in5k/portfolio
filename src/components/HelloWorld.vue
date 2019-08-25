@@ -29,7 +29,7 @@
                     <div class="my-4 subtitle-1 blue--text">Supporterz Inc.</div>
                   </a>
                   <div class="white--text">若手エンジニア向けの転職支援</div>
-                  <a href="https://supporterzcolab.com/dashboard/">
+                  <a href="https://supporterzcolab.com">
                     <div class="my-4 subtitle-1 blue--text">Supporterz CoLab</div>
                   </a>
                   <div class="white--text">若手エンジニアのための勉強会 connpassの姉妹サイト</div>
