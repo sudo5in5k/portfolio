@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8cb490d75e679fbb1e5f",
+    "revision": "5090fb4f2e5d8955f97f",
     "url": "/portfolio/css/app.d1429a38.css"
   },
   {
-    "revision": "8cb490d75e679fbb1e5f",
-    "url": "/portfolio/js/app.589473d5.js"
+    "revision": "5090fb4f2e5d8955f97f",
+    "url": "/portfolio/js/app.f4ca6987.js"
   },
   {
     "revision": "b3f916fcfc8e6fc2da94",
@@ -32,6 +32,10 @@ self.__precacheManifest = [
     "url": "/portfolio/img/qiita-logo.43ef3dfe.png"
   },
   {
+    "revision": "80968e126c94cbad06d15263876bd947",
+    "url": "/portfolio/img/java-logo.80968e12.png"
+  },
+  {
     "revision": "5d292e21532ea5857531cdb8b0180637",
     "url": "/portfolio/img/github-logo.5d292e21.jpg"
   },
@@ -48,7 +52,7 @@ self.__precacheManifest = [
     "url": "/portfolio/img/ussy.dc47641c.jpg"
   },
   {
-    "revision": "cdc4a5dcce8ba43af3a1aedfeb3b7265",
+    "revision": "ca3c6ef0faad4eedffa059e301a7a8ff",
     "url": "/portfolio/index.html"
   },
   {
