@@ -266,7 +266,7 @@
                   <v-layout v-if="card.source != ''" justify-end>
                     <a v-bind:href="card.source">
                       <img
-                        src="https://visualpharm.com/assets/171/Play%20Property-595b40b65ba036ed117d158a.svg"
+                        src="http://icons.iconarchive.com/icons/pelfusion/long-shadow-media/256/Document-icon.png"
                         height="50px"
                       />
                     </a>
@@ -356,7 +356,7 @@ export default {
         value: "4.5",
         desc:
           "オブジェクト指向・可読性の高いコード・非同期処理を扱うコードが書ける、業務経験あり",
-        icon: "https://cdn.icon-icons.com/icons2/195/PNG/256/Java_23404.png",
+        icon: require("@/assets/java-logo.png"),
         flex: 12
       },
       {
