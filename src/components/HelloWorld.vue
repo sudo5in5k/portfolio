@@ -570,6 +570,17 @@ export default {
         source:
           "https://speakerdeck.com/sudo5in5k/nazesi-haezientoninatutafalseka",
         flex: 6
+      },
+      {
+        title: "ここだから話せるVPoEの現場",
+        src:
+          "https://connpass-tokyo.s3.amazonaws.com/thumbs/d6/57/d65731dde8d6302389fac0f75d7ba2ea.png",
+        link: "https://kiitok.connpass.com/event/138739/",
+        description:
+          "kiitok主催のイベントにてブログ枠としてレポート記事を書きました",
+        source:
+          "https://ussylog.hatenablog.com/entry/2019/08/29/232747",
+        flex: 6
       }
     ],
     fontSizeMapper: word => Math.log2(word.value) * 9,
