@@ -21,16 +21,13 @@
 
                 <v-card-title class="white--text">Ussy (うっしー)</v-card-title>
                 <v-card-text>
-                  <div
-                    class="gray--text"
-                    style="font-weight:bold"
-                  >エンジニア(Django, GAS)/ Web marketer(Twitter, Facebook, Google Analytics) / 勉強会主催・運営(connpass, SupporterzCoLab)</div>
+                  <div class="gray--text" style="font-weight:bold">サポーターズCoLabマネージャー/中途エージェント/エンジニア</div>
                   <a href="https://supporterz.jp/">
                     <div class="my-4 subtitle-1 blue--text">Supporterz Inc.</div>
                   </a>
                   <div class="white--text">若手エンジニア向けの転職支援</div>
                   <a href="https://supporterzcolab.com">
-                    <div class="my-4 subtitle-1 blue--text">Supporterz CoLab</div>
+                    <div class="my-4 subtitle-1 blue--text">サポーターズCoLab</div>
                   </a>
                   <div class="white--text">若手エンジニアのための勉強会 connpassの姉妹サイト</div>
                 </v-card-text>
@@ -319,6 +316,11 @@ export default {
         text: "はてなブログ",
         link: "https://ussylog.hatenablog.com/",
         icon: require("@/assets/hatenablog-logo.png")
+      },
+      {
+        text: "note",
+        link: "https://note.mu/spzcolab",
+        icon: require("@/assets/note-logo.jpg")
       }
     ],
     skills: [
@@ -578,8 +580,17 @@ export default {
         link: "https://kiitok.connpass.com/event/138739/",
         description:
           "kiitok主催のイベントにてブログ枠としてレポート記事を書きました",
-        source:
-          "https://ussylog.hatenablog.com/entry/2019/08/29/232747",
+        source: "https://ussylog.hatenablog.com/entry/2019/08/29/232747",
+        flex: 6
+      },
+      {
+        title: "タピッカソン",
+        src:
+          "https://img.supporterzcolab.com/thumbs/94/a2/94a2c74a110247e725123c570459729a.png",
+        link: "https://supporterzcolab.com/event/900/",
+        description:
+          "主催として登録者100名超えのハッカソンの企画から運営、また個人で当日開発して成果発表まで行いました",
+        source: "https://github.com/sudo5in5k/tapickathon",
         flex: 6
       }
     ],
