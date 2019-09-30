@@ -592,6 +592,26 @@ export default {
           "主催として登録者100名超えのハッカソンの企画から運営、また個人で当日開発して成果発表まで行いました",
         source: "https://github.com/sudo5in5k/tapickathon",
         flex: 6
+      },
+      {
+        title: "PyCon JP 2019",
+        src:
+          "https://connpass-tokyo.s3.amazonaws.com/thumbs/3f/a3/3fa3cecce99a41df37a6c762498d62f7.png",
+        link: "https://pycon.jp/2019/",
+        description:
+          "スタッフとしてスポンサーへの対応やメディア寄稿を行いました",
+        source: "https://pycon.jp/2019/staff",
+        flex: 6
+      },
+      {
+        title: "「〇〇×エンジニア」キャリアパス",
+        src:
+          "https://connpass-tokyo.s3.amazonaws.com/thumbs/e3/bc/e3bca5d571ac782e9473a5ca049de9f6.png",
+        link: "https://kiitok.connpass.com/event/142318/",
+        description:
+          "kiitok主催のイベントにてブログ枠としてレポート記事を書きました",
+        source: "https://ussylog.hatenablog.com/entry/2019/09/17/211516",
+        flex: 6
       }
     ],
     fontSizeMapper: word => Math.log2(word.value) * 9,
