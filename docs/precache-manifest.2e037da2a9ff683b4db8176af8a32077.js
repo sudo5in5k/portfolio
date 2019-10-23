@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "41766a9de8aa14dae31e",
+    "revision": "8c0f32770b455d8dcaf6",
     "url": "/portfolio/css/app.d1429a38.css"
   },
   {
-    "revision": "41766a9de8aa14dae31e",
-    "url": "/portfolio/js/app.14ca5a17.js"
+    "revision": "8c0f32770b455d8dcaf6",
+    "url": "/portfolio/js/app.44975aa1.js"
   },
   {
     "revision": "b3f916fcfc8e6fc2da94",
@@ -14,6 +14,10 @@ self.__precacheManifest = [
   {
     "revision": "b3f916fcfc8e6fc2da94",
     "url": "/portfolio/js/chunk-vendors.618f48ee.js"
+  },
+  {
+    "revision": "f625916f3978c1f1fd1e3ad0742c907d",
+    "url": "/portfolio/img/connpass-logo.f625916f.png"
   },
   {
     "revision": "626ecc149649ec8ddb5853e12d87625c",
@@ -56,7 +60,7 @@ self.__precacheManifest = [
     "url": "/portfolio/img/ussy.dc47641c.jpg"
   },
   {
-    "revision": "4f1f2c7f75ef872ddbc7c7560dbc675e",
+    "revision": "31dd8d9fb96c3e9b5c3caf4ac1869e9e",
     "url": "/portfolio/index.html"
   },
   {

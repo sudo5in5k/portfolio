@@ -321,6 +321,11 @@ export default {
         text: "note",
         link: "https://note.mu/spzcolab",
         icon: require("@/assets/note-logo.jpg")
+      },
+      {
+        text: "connpass",
+        link: "https://connpass.com/user/sudo5in5k/",
+        icon: require("@/assets/connpass-logo.png")
       }
     ],
     skills: [
@@ -553,7 +558,7 @@ export default {
         flex: 6
       },
       {
-        title: "サポーターズCoLab",
+        title: "17卒ミートアップLT",
         src:
           "https://img.supporterzcolab.com/thumbs/89/76/897651dd1ab0c17d79a31e57f7a228b5.png",
         link: "https://supporterzcolab.com/event/901/",
@@ -599,7 +604,7 @@ export default {
           "https://connpass-tokyo.s3.amazonaws.com/thumbs/3f/a3/3fa3cecce99a41df37a6c762498d62f7.png",
         link: "https://pycon.jp/2019/",
         description:
-          "スタッフとしてスポンサーへの対応やメディア寄稿を行いました",
+          "スタッフとして主にスポンサーへの対応やブログ執筆を行いました",
         source: "https://pycon.jp/2019/staff",
         flex: 6
       },
@@ -612,6 +617,60 @@ export default {
           "kiitok主催のイベントにてブログ枠としてレポート記事を書きました",
         source: "https://ussylog.hatenablog.com/entry/2019/09/17/211516",
         flex: 6
+      },
+      {
+        title: "Kotlin入門",
+        src:
+          "https://img.supporterzcolab.com/thumbs/0b/46/0b46430d97a328d49c573794868d7db2.png",
+        link: "https://supporterzcolab.com/event/949/",
+        description: "Javaを使っている方向けのKotlin入門を講義しました",
+        source: "https://github.com/sudo5in5k/JavaToKtTrainingForBeginner",
+        flex: 6
+      },
+      {
+        title: "ビアッカソン",
+        src:
+          "https://img.supporterzcolab.com/thumbs/e4/7e/e47ed6869dccf5ebda19c047a964a694.png",
+        link: "https://supporterzcolab.com/event/937/",
+        description: "主催としてハッカソンの企画から運営ま一貫して行いました",
+        source: "https://note.mu/spzcolab/m/m2b98f57c3fc6",
+        flex: 6
+      },
+      {
+        title: "DIVE INTO CODE DEMODAY 7th",
+        src: "https://i.gyazo.com/1673ca7ba3245c45a26b795392597b05.png",
+        link: "https://diveintocode.jp/demoday",
+        description: "スポンサーLTとして登壇しました",
+        source: "https://speakerdeck.com/sudo5in5k/dive-into-code-demoday-7th",
+        flex: 12
+      },
+      {
+        title: "読書会「リーダブルコード」",
+        src:
+          "https://img.supporterzcolab.com/thumbs/67/80/6780bc7b9d4ac7b0c4791d811eea7e71.png",
+        link: "https://supporterzcolab.com/event/958/",
+        description: "主催としてABD読書会のファシリテーターを行いました",
+        source: "https://speakerdeck.com/sudo5in5k/abddu-shu-hui",
+        flex: 6
+      },
+      {
+        title: "pandas入門",
+        src:
+          "https://img.supporterzcolab.com/thumbs/fd/9e/fd9ea9fa539088adb2f0cdd4789a1c70.png",
+        link: "https://supporterzcolab.com/event/971/",
+        description: "pandasのデータ加工・整形入門を講義しました",
+        source: "https://github.com/sudo5in5k/onlinePandasTutorial",
+        flex: 6
+      },
+      {
+        title: "PyCon JP Gihyo",
+        src:
+          "https://scontent.fkix1-1.fna.fbcdn.net/v/t1.0-9/14233091_10155836011671959_388582903053245335_n.png?_nc_cat=110&_nc_oc=AQlqxyfPNvtyCrM-gLFC-wMdtBD-9Cp0wnrfI0MuBAUuj19v0f-jcJmmMVrjqYgYZ8VxAFm32OjEBvw0oe-_Etl7&_nc_ht=scontent.fkix1-1.fna&oh=c41eef884823cf2e63676dda640c0150&oe=5E16F310",
+        link: "https://gihyo.jp/news/report/01/pyconjp2019/0001",
+        description:
+          "技術評論社にてPyCon JP 2019カンファレンスレポートを執筆をしました",
+        source: "",
+        flex: 12
       }
     ],
     fontSizeMapper: word => Math.log2(word.value) * 9,
