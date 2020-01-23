@@ -21,15 +21,7 @@
 
                 <v-card-title class="white--text">Ussy (うっしー)</v-card-title>
                 <v-card-text>
-                  <div class="gray--text" style="font-weight:bold">サポーターズCoLabマネージャー/中途エージェント/エンジニア</div>
-                  <a href="https://supporterz.jp/">
-                    <div class="my-4 subtitle-1 blue--text">Supporterz Inc.</div>
-                  </a>
-                  <div class="white--text">若手エンジニア向けの転職支援</div>
-                  <a href="https://supporterzcolab.com">
-                    <div class="my-4 subtitle-1 blue--text">サポーターズCoLab</div>
-                  </a>
-                  <div class="white--text">若手エンジニアのための勉強会 connpassの姉妹サイト</div>
+                  <div class="gray--text" style="font-weight:bold">Coming Soon...</div>
                 </v-card-text>
 
                 <v-divider class="mx-4"></v-divider>
@@ -235,6 +227,20 @@
                 </v-container>
               </v-card>
             </v-timeline-item>
+
+            <!-- 4th career -->
+            <v-timeline-item color="pink" fill-dot left large>
+              <v-card>
+                <v-card-title class="pink">
+                  <h2 class="display-1 white--text font-weight-bold">Coming Soon...</h2>
+                </v-card-title>
+                <v-container>
+                  <v-layout wrap>
+                    <v-flex xs10>Coming Soon...</v-flex>
+                  </v-layout>
+                </v-container>
+              </v-card>
+            </v-timeline-item>
           </v-timeline>
         </v-flex>
       </v-layout>
@@ -282,10 +288,13 @@
 export default {
   components: {},
   data: () => ({
-    bioBody: `大学院にて機械学習を専攻後、新卒でAndroidアプリエンジニアに。ニュースアプリの新規タブ追加、広告追加、Kotlinへのリファクタリング、Jenkinsを用いたCI/CD整備、スクラム開発の推進を担当。
-    その後転職し、引き続きAndroidアプリエンジニアとしてブラウザーアプリの開発担当、QAやスクラムマスターも付随的に行う。\n
-    元々人や組織の事を考えるのが好きだったことと、転職する過程で様々な人からキャリアの相談を受ける中で、エンジニアがキャリアに悩んでいることに気づき、キャリアアドバイザーとして現職に。\n
-    キャリアアドバイザーとして転職・キャリア相談に乗るだけではなく、エンジニアがキャリアアップを図るため・キャリアを見つける手がかりにするために勉強会を企画・開催・運営している。`,
+    bioBody: `大学時代ダイエットや自分のキャリアが決まらないことをきっかけに人の意思決定を支えてあげられたら面白いと思うようになる\n
+    その後「データの見えざる手」という本に出会い、プロダクトを通じたデータとUI/UXが意思決定を支えると確信し、大学院にて機械学習を専攻後、新卒でAndroidアプリエンジニアに。\n
+    大規模ニュースアプリの実装・新技術導入・スクラム推進を担当。\n
+    その後転職し、引き続きAndroidアプリエンジニアとしてブラウザーアプリの開発担当・QAやスクラムマスターも付随的に行う。\n
+    転職をきっかけに刺激的な会社が多くあることを知り、また様々な人からキャリアの相談を受ける中で身近なエンジニアがキャリアに悩んでいることに気づく。\n
+    そこでAndroidエンジニアからキャリアアドバイザーと勉強会のディレクターという形で、エンジニア人の意思決定に直接相談に乗りつつ成長と教育に寄与するように努める。\n
+    近々プロダクトを作る側として関わるほうが楽しいと再認識し、Androidエンジニアとして再び戻る予定`,
     websites: [
       {
         text: "Twitter",
@@ -316,11 +325,6 @@ export default {
         text: "はてなブログ",
         link: "https://ussylog.hatenablog.com/",
         icon: require("@/assets/hatenablog-logo.png")
-      },
-      {
-        text: "note",
-        link: "https://note.mu/spzcolab",
-        icon: require("@/assets/note-logo.jpg")
       },
       {
         text: "connpass",

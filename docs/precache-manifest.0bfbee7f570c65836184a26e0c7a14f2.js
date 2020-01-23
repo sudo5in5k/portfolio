@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8c0f32770b455d8dcaf6",
+    "revision": "1a2ebf8fdc65982ab107",
     "url": "/portfolio/css/app.d1429a38.css"
   },
   {
-    "revision": "8c0f32770b455d8dcaf6",
-    "url": "/portfolio/js/app.44975aa1.js"
+    "revision": "1a2ebf8fdc65982ab107",
+    "url": "/portfolio/js/app.8174cc47.js"
   },
   {
     "revision": "b3f916fcfc8e6fc2da94",
@@ -44,10 +44,6 @@ self.__precacheManifest = [
     "url": "/portfolio/img/github-logo.5d292e21.jpg"
   },
   {
-    "revision": "75a912bf4d5e7447b9856413050d9a26",
-    "url": "/portfolio/img/note-logo.75a912bf.jpg"
-  },
-  {
     "revision": "749e287fd374ca3477c62d9a22c85b62",
     "url": "/portfolio/img/contact.749e287f.jpg"
   },
@@ -60,7 +56,7 @@ self.__precacheManifest = [
     "url": "/portfolio/img/ussy.dc47641c.jpg"
   },
   {
-    "revision": "31dd8d9fb96c3e9b5c3caf4ac1869e9e",
+    "revision": "6d88055edec6cb738392f2b6e41d04c4",
     "url": "/portfolio/index.html"
   },
   {
