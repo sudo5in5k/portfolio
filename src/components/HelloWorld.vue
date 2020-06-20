@@ -15,7 +15,10 @@
               <v-card :loading="loading" class="transparent mx-auto my-12" flat max-width="374">
                 <v-card-title class="white--text">Ussy</v-card-title>
                 <v-card-text>
-                  <div class="gray--text" style="font-weight:bold">Coming Soon...</div>
+                  <div
+                    class="gray--text"
+                    style="font-weight:bold"
+                  >Lead Android App Enginner in start-up</div>
                 </v-card-text>
 
                 <v-divider class="mx-4"></v-divider>
@@ -199,10 +202,7 @@
                 </v-card-title>
                 <v-container>
                   <v-layout wrap>
-                    <v-flex
-                      xs10
-                      class="font-weight-bold my-2"
-                    >若手エンジニア向けキャリアアドバイザー、勉強会企画・運営・主催者</v-flex>
+                    <v-flex xs10 class="font-weight-bold my-2">若手エンジニア向けキャリアアドバイザー、勉強会企画・運営・主催者</v-flex>
                     <v-flex xs10>エンジニアの経験をもとに、若手エンジニア向けのキャリア相談と転職支援に寄り添う</v-flex>
                     <v-flex xs10>
                       また、若手エンジニアのアウトプット・インプットの機会を提供する
@@ -221,16 +221,9 @@
                 </v-card-title>
                 <v-container>
                   <v-layout wrap>
-                    <v-flex
-                      xs10
-                      class="font-weight-bold my-2"
-                    >Lead Android App Engineer</v-flex>
-                    <v-flex xs10>
-                      やりたいことを実現するためのSNSアプリの開発に従事
-                    </v-flex>
-                    <v-flex xs10>
-                      0->1フェーズで初めてのAndroidアプリエンジニア正社員として活動、設計のMVVM化・フルスクラッチの新規機能開発
-                    </v-flex>
+                    <v-flex xs10 class="font-weight-bold my-2">Lead Android App Engineer</v-flex>
+                    <v-flex xs10>やりたいことを実現するためのSNSアプリの開発に従事</v-flex>
+                    <v-flex xs10>0->1フェーズで初めてのAndroidアプリエンジニア正社員として活動、設計のMVVM化・フルスクラッチの新規機能開発</v-flex>
                     <v-flex xs10>
                       <ul>
                         <li>・会員登録の認証周り</li>
@@ -313,7 +306,7 @@ export default {
     その後、大学院にて機械学習を専攻後、新卒でAndroidアプリエンジニアに。大規模ニュースアプリの実装・新技術導入・スクラム推進を担当。\n
     その後転職し、引き続きAndroidアプリエンジニアとしてブラウザーアプリの開発担当・QAやスクラムマスターも付随的に行う。\n
     転職と身近な人からキャリアの相談を受ける中で身近なエンジニアがキャリアに悩んでいることに気づき、エンジニア専門のキャリアアドバイザーと勉強会のディレクターを務める。\n
-    その後、人材ビジネスと自分のやりたいことのギャップを感じ、0->1ベンチャーにてAndroidエンジニアとしてリードエンジニアとして戻り活躍中。`,
+    その後、人材ビジネスと自分のやりたいことのギャップを感じ、0->1ベンチャーにてリードAndroidアプリエンジニアとして再び活躍中。`,
     websites: [
       {
         text: "Twitter",
@@ -677,8 +670,7 @@ export default {
       },
       {
         title: "PyCon JP Gihyo",
-        src:
-          "https://scontent.fkix1-1.fna.fbcdn.net/v/t1.0-9/14233091_10155836011671959_388582903053245335_n.png?_nc_cat=110&_nc_oc=AQlqxyfPNvtyCrM-gLFC-wMdtBD-9Cp0wnrfI0MuBAUuj19v0f-jcJmmMVrjqYgYZ8VxAFm32OjEBvw0oe-_Etl7&_nc_ht=scontent.fkix1-1.fna&oh=c41eef884823cf2e63676dda640c0150&oe=5E16F310",
+        src: "https://prtimes.jp/i/10591/144/resize/d10591-144-602117-7.jpg",
         link: "https://gihyo.jp/news/report/01/pyconjp2019/0001",
         description:
           "技術評論社にてPyCon JP 2019カンファレンスレポートを執筆をしました",
