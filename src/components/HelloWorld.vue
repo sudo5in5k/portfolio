@@ -13,13 +13,7 @@
           <v-layout row wrap align-content-start>
             <v-flex xs12 md4 align-center>
               <v-card :loading="loading" class="transparent mx-auto my-12" flat max-width="374">
-                <v-layout justify-center>
-                  <v-avatar size="150">
-                    <img v-bind:src="require('@/assets/ussy.jpg')" alt="avatar" />
-                  </v-avatar>
-                </v-layout>
-
-                <v-card-title class="white--text">Ussy (うっしー)</v-card-title>
+                <v-card-title class="white--text">Ussy</v-card-title>
                 <v-card-text>
                   <div class="gray--text" style="font-weight:bold">Coming Soon...</div>
                 </v-card-text>
@@ -201,27 +195,18 @@
             <v-timeline-item color="cyan lighten-1" fill-dot right large>
               <v-card>
                 <v-card-title class="cyan lighten-1">
-                  <h2 class="display-1 white--text font-weight-bold">サポーターズ</h2>
+                  <h2 class="display-1 white--text font-weight-bold">人材会社</h2>
                 </v-card-title>
                 <v-container>
                   <v-layout wrap>
                     <v-flex
                       xs10
                       class="font-weight-bold my-2"
-                    >若手エンジニア向けキャリアアドバイザー、勉強会企画・運営・主催者、ウェブマーケター</v-flex>
+                    >若手エンジニア向けキャリアアドバイザー、勉強会企画・運営・主催者</v-flex>
                     <v-flex xs10>エンジニアの経験をもとに、若手エンジニア向けのキャリア相談と転職支援に寄り添う</v-flex>
                     <v-flex xs10>
                       また、若手エンジニアのアウトプット・インプットの機会を提供する
                       <a href="https://supporterzcolab.com/">自社勉強会</a>の主催者・企画・運営を一括で担当
-                    </v-flex>
-                    <v-flex xs10>加えてビジネスサイド側との連携のために自社サイトの一部改修やGoogleAppsScriptを使用した自動化等を担当</v-flex>
-                    <v-flex xs10 class="font-weight-bold my-2">言語・ツール類</v-flex>
-                    <v-flex xs8>
-                      <ul>
-                        <li>Django, Google Apps Script</li>
-                        <li>git, Github, Google Analytics, Twitter, Facebook</li>
-                        <li>HRMOS, SARDINE, Slack, Gsuite</li>
-                      </ul>
                     </v-flex>
                   </v-layout>
                 </v-container>
@@ -232,11 +217,47 @@
             <v-timeline-item color="pink" fill-dot left large>
               <v-card>
                 <v-card-title class="pink">
-                  <h2 class="display-1 white--text font-weight-bold">Coming Soon...</h2>
+                  <h2 class="display-1 white--text font-weight-bold">ベンチャー企業</h2>
                 </v-card-title>
                 <v-container>
                   <v-layout wrap>
-                    <v-flex xs10>Coming Soon...</v-flex>
+                    <v-flex
+                      xs10
+                      class="font-weight-bold my-2"
+                    >Lead Android App Engineer</v-flex>
+                    <v-flex xs10>
+                      やりたいことを実現するためのSNSアプリの開発に従事
+                    </v-flex>
+                    <v-flex xs10>
+                      0->1フェーズで初めてのAndroidアプリエンジニア正社員として活動、設計のMVVM化・フルスクラッチの新規機能開発
+                    </v-flex>
+                    <v-flex xs10>
+                      <ul>
+                        <li>・会員登録の認証周り</li>
+                        <li>・通知機能実装</li>
+                        <li>・Twitterライクなユーザー同士のコメント投稿(画像アップロード含)と閲覧・いいね・編集・削除機能</li>
+                        <li>・コレクション要素のある初回特定の実装</li>
+                        <li>・抜本的な設計再編</li>
+                        <li>・GithubActionsを通じたCI設計</li>
+                        <li>・コーディングルールやブランチルール等運用方法策定</li>
+                        <li>・ビルド環境ごとの設定作成</li>
+                      </ul>
+                    </v-flex>
+                    <v-flex xs10 class="font-weight-bold my-2">言語・設計・ツール類</v-flex>
+                    <v-flex xs8>
+                      <ul>
+                        <li>Kotlin1.3</li>
+                        <li>MVVM(Data Binding, LiveData, corotuine)</li>
+                        <li>Android Jetpack(KTX, LifeCycle, LiveData, Paging, ViewModel)</li>
+                        <li>Firebase(FireStore, Crashlytics, Auth, Messaging, Analytics, Dynamic-links)</li>
+                        <li>Facebook, LINE, Twitter SDK</li>
+                        <li>Retrofit(Moshi-Adapter), okhttp3, GraphQL, Coroutines</li>
+                        <li>マテリアルデザイン, RecyclerView, CardView</li>
+                        <li>JUnit4</li>
+                        <li>git, Github Enterprise, figma</li>
+                        <li>Zoom, Slack</li>
+                      </ul>
+                    </v-flex>
                   </v-layout>
                 </v-container>
               </v-card>
@@ -288,23 +309,16 @@
 export default {
   components: {},
   data: () => ({
-    bioBody: `大学時代ダイエットや自分のキャリアが決まらないことをきっかけに人の意思決定を支えてあげられたら面白いと思うようになる\n
-    その後「データの見えざる手」という本に出会い、プロダクトを通じたデータとUI/UXが意思決定を支えると確信し、大学院にて機械学習を専攻後、新卒でAndroidアプリエンジニアに。\n
-    大規模ニュースアプリの実装・新技術導入・スクラム推進を担当。\n
+    bioBody: `大学時代の経験から人の意思決定を支えてあげられたら面白いと思う中で、「データの見えざる手」という本に出会い、プロダクトを通じたデータとUI/UXが意思決定を支えると確信する。\n
+    その後、大学院にて機械学習を専攻後、新卒でAndroidアプリエンジニアに。大規模ニュースアプリの実装・新技術導入・スクラム推進を担当。\n
     その後転職し、引き続きAndroidアプリエンジニアとしてブラウザーアプリの開発担当・QAやスクラムマスターも付随的に行う。\n
-    転職をきっかけに刺激的な会社が多くあることを知り、また様々な人からキャリアの相談を受ける中で身近なエンジニアがキャリアに悩んでいることに気づく。\n
-    そこでAndroidエンジニアからキャリアアドバイザーと勉強会のディレクターという形で、エンジニア人の意思決定に直接相談に乗りつつ成長と教育に寄与するように努める。\n
-    近々プロダクトを作る側として関わるほうが楽しいと再認識し、Androidエンジニアとして再び戻る予定`,
+    転職と身近な人からキャリアの相談を受ける中で身近なエンジニアがキャリアに悩んでいることに気づき、エンジニア専門のキャリアアドバイザーと勉強会のディレクターを務める。\n
+    その後、人材ビジネスと自分のやりたいことのギャップを感じ、0->1ベンチャーにてAndroidエンジニアとしてリードエンジニアとして戻り活躍中。`,
     websites: [
       {
         text: "Twitter",
         link: "https://twitter.com/shoushi12",
         icon: require("@/assets/twitter-logo.png")
-      },
-      {
-        text: "Facebook",
-        link: "https://www.facebook.com/people/Sho-Ushikubo/100014055931970",
-        icon: require("@/assets/facebook-logo.png")
       },
       {
         text: "Github",
@@ -320,11 +334,6 @@ export default {
         text: "Wantedly",
         link: "https://www.wantedly.com/users/78524630",
         icon: require("@/assets/wantedly-logo.png")
-      },
-      {
-        text: "はてなブログ",
-        link: "https://ussylog.hatenablog.com/",
-        icon: require("@/assets/hatenablog-logo.png")
       },
       {
         text: "connpass",
@@ -528,7 +537,7 @@ export default {
         description:
           "若手エンジニア向け勉強会PFのマネージャーとして企画・主催・運営を担当しています",
         source: "",
-        flex: 12
+        flex: 6
       },
       {
         title: "CareerKaigi",
@@ -538,7 +547,7 @@ export default {
         description:
           "エンジニアのキャリアの意思決定を助けるため主催者として活動しています",
         source: "",
-        flex: 12
+        flex: 6
       },
       {
         title: "サポーターズCoLab",

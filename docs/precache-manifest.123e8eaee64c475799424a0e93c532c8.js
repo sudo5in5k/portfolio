@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1a2ebf8fdc65982ab107",
+    "revision": "96f335055629246cad33",
     "url": "/portfolio/css/app.d1429a38.css"
   },
   {
-    "revision": "1a2ebf8fdc65982ab107",
-    "url": "/portfolio/js/app.8174cc47.js"
+    "revision": "96f335055629246cad33",
+    "url": "/portfolio/js/app.7439a5ab.js"
   },
   {
     "revision": "b3f916fcfc8e6fc2da94",
@@ -48,15 +48,7 @@ self.__precacheManifest = [
     "url": "/portfolio/img/contact.749e287f.jpg"
   },
   {
-    "revision": "07afe6e16352eb3b6de346ead8b9b95d",
-    "url": "/portfolio/img/facebook-logo.07afe6e1.png"
-  },
-  {
-    "revision": "dc47641c2e336a903237a9d60f933726",
-    "url": "/portfolio/img/ussy.dc47641c.jpg"
-  },
-  {
-    "revision": "6d88055edec6cb738392f2b6e41d04c4",
+    "revision": "c20b7e674622da69f718139021ca812b",
     "url": "/portfolio/index.html"
   },
   {

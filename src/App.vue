@@ -35,14 +35,9 @@
                   <v-img :src="require('@/assets/contact.jpg')" />
                 </v-card>
                 <v-card :loading="loading" class="transparent my-4" flat>
-                  <v-card-text class="font-weight-bold white--text my-6 mx-4">
+                  <v-card-text class="white--text my-6 mx-4">
                     <div class="biotext" style="white-space:pre-line">
-                      <li>
-                        <a href="https://supporterzcolab.com/">勉強会の講師を募集</a> (インセンティブあり)
-                      </li>
-                      <li>
-                        <a href="https://focus.voyagegroup.com/post-0007/">エンジニアの皆様向けの勉強会の会場提供</a>
-                      </li>
+                      <li>転職・副業(Androidのモダンな開発ができます、エンジニアの採用のお手伝いができます)のお誘い</li>
                       <li>その他ご依頼・ご相談</li>
                     </div>
 
@@ -53,7 +48,7 @@
                     >E-mail: sudo5in5k★gmail.com (★を直してください)</div>
                     <div class="biotext mx-6">
                       Twitter DM:
-                      <a href="https://twitter.com/shoushi12">@shoushi12</a>
+                      <a href="https://twitter.com/sudo5in5k">@sudo5in5k</a>
                     </div>
                   </v-card-text>
                 </v-card>
