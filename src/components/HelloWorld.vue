@@ -240,12 +240,12 @@
                     <v-flex xs8>
                       <ul>
                         <li>Kotlin1.3</li>
-                        <li>MVVM(Data Binding, LiveData, corotuine)</li>
+                        <li>MVVM(Data Binding, LiveData, corotuine, Repositoryパターン)</li>
                         <li>Android Jetpack(KTX, LifeCycle, LiveData, Paging, ViewModel)</li>
-                        <li>Firebase(FireStore, Crashlytics, Auth, Messaging, Analytics, Dynamic-links)</li>
+                        <li>Firebase(FireStore, Crashlytics, Auth, Messaging, Analytics, Dynamic-links, Storage)</li>
                         <li>Facebook, LINE, Twitter SDK</li>
                         <li>Retrofit(Moshi-Adapter), okhttp3, GraphQL, Coroutines</li>
-                        <li>マテリアルデザイン, RecyclerView, CardView</li>
+                        <li>マテリアルデザイン, RecyclerView, CardView, ExoPlayer</li>
                         <li>JUnit4</li>
                         <li>git, Github Enterprise, figma</li>
                         <li>Zoom, Slack</li>
@@ -332,6 +332,16 @@ export default {
         text: "connpass",
         link: "https://connpass.com/user/sudo5in5k/",
         icon: require("@/assets/connpass-logo.png")
+      },
+      {
+        text: "google-play",
+        link: "https://play.google.com/store/apps/developer?id=Sho+Ushikubo",
+        icon: require("@/assets/google-play-logo.png")
+      },
+      {
+        text: "scrapbox",
+        link: "https://scrapbox.io/sudo5in5k/about_me",
+        icon: require("@/assets/scrapbox-logo.png")
       }
     ],
     skills: [
@@ -523,6 +533,15 @@ export default {
       }
     ],
     cards: [
+      {
+        title: "1440 ~1日タイマー~",
+        src: require("@/assets/google-play-badge.png"),
+        link: "https://play.google.com/store/apps/details?id=sho.ushikubo.a1440",
+        description:
+          "1日のタイマーと指定時間通知ができるアプリを自作し公開しています",
+        source: "",
+        flex: 12
+      },
       {
         title: "サポーターズCoLab",
         src: "https://corp.supporterz.jp/img/colab-logo.png",
