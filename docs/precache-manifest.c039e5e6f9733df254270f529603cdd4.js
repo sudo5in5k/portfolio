@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0f3e3d58e43125757f70",
+    "revision": "153061d6f60cfd91dc1a",
     "url": "/portfolio/css/app.d1429a38.css"
   },
   {
-    "revision": "0f3e3d58e43125757f70",
-    "url": "/portfolio/js/app.ef11df14.js"
+    "revision": "153061d6f60cfd91dc1a",
+    "url": "/portfolio/js/app.43e2e97e.js"
   },
   {
     "revision": "b3f916fcfc8e6fc2da94",
@@ -22,10 +22,6 @@ self.__precacheManifest = [
   {
     "revision": "626ecc149649ec8ddb5853e12d87625c",
     "url": "/portfolio/img/twitter-logo.626ecc14.png"
-  },
-  {
-    "revision": "c8e9775f56567a90632e04d60ff411b1",
-    "url": "/portfolio/img/wantedly-logo.c8e9775f.png"
   },
   {
     "revision": "2db97d69ba44f8da4663584e8197143f",
@@ -60,7 +56,7 @@ self.__precacheManifest = [
     "url": "/portfolio/img/scrapbox-logo.512b2ad8.png"
   },
   {
-    "revision": "965c963b0f9f78d044d6135ab9564f53",
+    "revision": "4e851d7737ccda6d6bde650a1f793aed",
     "url": "/portfolio/index.html"
   },
   {

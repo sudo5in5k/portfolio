@@ -13,12 +13,12 @@
           <v-layout row wrap align-content-start>
             <v-flex xs12 md4 align-center>
               <v-card :loading="loading" class="transparent mx-auto my-12" flat max-width="374">
-                <v-card-title class="white--text">Ussy</v-card-title>
+                <v-card-title class="white--text">Ussy (sudo5in5k)</v-card-title>
                 <v-card-text>
                   <div
                     class="gray--text"
                     style="font-weight:bold"
-                  >Lead Android App Enginner in start-up</div>
+                  >App Enginner at start-up</div>
                 </v-card-text>
 
                 <v-divider class="mx-4"></v-divider>
@@ -100,7 +100,7 @@
         <v-flex xs12>
           <v-timeline>
             <!-- non career equaled to student -->
-            <v-timeline-item color="green" fill-dot left>
+            <v-timeline-item color="green" fill-dot left small>
               <v-card>
                 <v-card-title class="green">
                   <h2 class="display-1 white--text font-weight-bold">Tokyo University of Science</h2>
@@ -128,10 +128,10 @@
             </v-timeline-item>
 
             <!-- 1st career -->
-            <v-timeline-item color="blue" fill-dot right>
+            <v-timeline-item color="blue" fill-dot right small>
               <v-card>
                 <v-card-title class="blue">
-                  <h2 class="display-1 white--text font-weight-bold">KDDI</h2>
+                  <h2 class="display-1 white--text font-weight-bold">大手通信企業</h2>
                 </v-card-title>
                 <v-container>
                   <v-layout wrap>
@@ -159,7 +159,7 @@
             <v-timeline-item color="red" fill-dot left small>
               <v-card>
                 <v-card-title class="red justify-end">
-                  <h2 class="display-1 mr-3 white--text font-weight-bold">Yahoo! JAPAN</h2>
+                  <h2 class="display-1 mr-3 white--text font-weight-bold">大手Web企業</h2>
                 </v-card-title>
                 <v-container>
                   <v-layout wrap>
@@ -195,9 +195,9 @@
             </v-timeline-item>
 
             <!-- 3rd career -->
-            <v-timeline-item color="cyan lighten-1" fill-dot right large>
+            <v-timeline-item color="black" fill-dot right small>
               <v-card>
-                <v-card-title class="cyan lighten-1">
+                <v-card-title class="black">
                   <h2 class="display-1 white--text font-weight-bold">人材会社</h2>
                 </v-card-title>
                 <v-container>
@@ -214,7 +214,7 @@
             </v-timeline-item>
 
             <!-- 4th career -->
-            <v-timeline-item color="pink" fill-dot left large>
+            <v-timeline-item color="pink" fill-dot left small>
               <v-card>
                 <v-card-title class="pink">
                   <h2 class="display-1 white--text font-weight-bold">ベンチャー企業</h2>
@@ -222,7 +222,7 @@
                 <v-container>
                   <v-layout wrap>
                     <v-flex xs10 class="font-weight-bold my-2">Lead Android App Engineer</v-flex>
-                    <v-flex xs10>やりたいことを実現するためのSNSアプリの開発に従事</v-flex>
+                    <v-flex xs10>ブロックチェーンを通じたSNSアプリ開発に従事</v-flex>
                     <v-flex xs10>0->1フェーズで初めてのAndroidアプリエンジニア正社員として活動、設計のMVVM化・フルスクラッチの新規機能開発</v-flex>
                     <v-flex xs10>
                       <ul>
@@ -255,6 +255,43 @@
                 </v-container>
               </v-card>
             </v-timeline-item>
+
+            <!-- 5th career -->
+            <v-timeline-item color="blue" fill-dot right large>
+              <v-card>
+                <v-card-title class="blue" color="#0D97FF">
+                  <h2 class="display-1 white--text font-weight-bold">Kyash</h2>
+                </v-card-title>
+                <v-container>
+                  <v-layout wrap>
+                    <v-flex xs10 class="font-weight-bold my-2">Android App Engineer</v-flex>
+                    <v-flex xs10>Kyashアプリ開発に従事</v-flex>
+                    <v-flex xs10>0->1フェーズで初めてのAndroidアプリエンジニア正社員として活動、設計のMVVM化・フルスクラッチの新規機能開発</v-flex>
+                    <v-flex xs10>
+                      <ul>
+                        <li>銀行自動入金機能の開発</li>
+                        <li>共有口座の開発</li>
+                        <li>Jetpack Compose化</li>
+                      </ul>
+                    </v-flex>
+                    <v-flex xs10 class="font-weight-bold my-2">言語・設計・ツール類</v-flex>
+                    <v-flex xs8>
+                      <ul>
+                        <li>Kotlin1.5</li>
+                        <li>MVVM(Data Binding, LiveData, Rx, Dagger/Dagger Hilt, Repositoryパターン)</li>
+                        <li>Android Jetpack, Jetpack Compose</li>
+                        <li>Firebase(Crashlytics, Messaging, Analytics)</li>
+                        <li>Retrofit, okhttp3</li>
+                        <li>Material-Design, Groupie, CardView</li>
+                        <li>Mockk, JUnit4, Kakao</li>
+                        <li>git, Github Enterprise, figma, CircleCI, Github Actions</li>
+                        <li>Zoom, Slack</li>
+                      </ul>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-card>
+            </v-timeline-item>
           </v-timeline>
         </v-flex>
       </v-layout>
@@ -267,13 +304,13 @@
       </v-flex>
     </v-layout>
     <section>
-      <v-card class="mx-auto my-8" max-width="860">
+      <v-card class="mx-auto my-8" max-width="800">
         <v-container fluid grid-list-md pa-2>
           <v-layout wrap>
             <v-flex v-for="card in cards" :key="card.title" v-bind="{ [`xs${card.flex}`]: true }">
               <v-card color="gray">
                 <a v-bind:href="card.link">
-                  <v-img :src="card.src" class="white--text" height="300px" />
+                  <v-img :src="card.src" class="white--text" height="200px" />
                 </a>
 
                 <v-card-title class="fill-height align-end green--text" v-text="card.title"></v-card-title>
@@ -302,15 +339,14 @@
 export default {
   components: {},
   data: () => ({
-    bioBody: `大学時代の経験から人の意思決定を支えてあげられたら面白いと思う中で、「データの見えざる手」という本に出会い、プロダクトを通じたデータとUI/UXが意思決定を支えると確信する。\n
-    その後、大学院にて機械学習を専攻後、新卒でAndroidアプリエンジニアに。大規模ニュースアプリの実装・新技術導入・スクラム推進を担当。\n
-    その後転職し、引き続きAndroidアプリエンジニアとしてブラウザーアプリの開発担当・QAやスクラムマスターも付随的に行う。\n
-    転職と身近な人からキャリアの相談を受ける中で身近なエンジニアがキャリアに悩んでいることに気づき、エンジニア専門のキャリアアドバイザーと勉強会のディレクターを務める。\n
-    その後、人材ビジネスと自分のやりたいことのギャップを感じ、0->1ベンチャーにてリードAndroidアプリエンジニアとして再び活躍中。`,
+    bioBody: `大学院にて機械学習を専攻後、新卒でAndroidアプリエンジニアからスタート。大規模ニュースアプリの実装・新技術導入・スクラム推進を担当。
+    別会社でブラウザアプリの開発担当・QAやスクラムマスターも付随的に行う。\n
+    途中、別会社でエンジニアのリクルーターとしてビジネスサイドも経験するが人材ビジネスと自分のやりたいことのギャップを感じ、
+    現在はベンチャーにてAndroidアプリエンジニアとして再び活躍中。`,
     websites: [
       {
         text: "Twitter",
-        link: "https://twitter.com/shoushi12",
+        link: "https://twitter.com/sudo5in5k",
         icon: require("@/assets/twitter-logo.png")
       },
       {
@@ -322,11 +358,6 @@ export default {
         text: "Qiita",
         link: "https://qiita.com/sudo5in5k",
         icon: require("@/assets/qiita-logo.png")
-      },
-      {
-        text: "Wantedly",
-        link: "https://www.wantedly.com/users/78524630",
-        icon: require("@/assets/wantedly-logo.png")
       },
       {
         text: "connpass",
@@ -544,27 +575,8 @@ export default {
       },
       {
         title: "サポーターズCoLab",
-        src: "https://corp.supporterz.jp/img/colab-logo.png",
-        link: "https://supporterzcolab.com/",
-        description:
-          "若手エンジニア向け勉強会PFのマネージャーとして企画・主催・運営を担当しています",
-        source: "",
-        flex: 6
-      },
-      {
-        title: "CareerKaigi",
         src:
-          "https://connpass-tokyo.s3.amazonaws.com/thumbs/3e/65/3e65d001886c860feedcff1701599601.png",
-        link: "https://career-kaigi.connpass.com/",
-        description:
-          "エンジニアのキャリアの意思決定を助けるため主催者として活動しています",
-        source: "",
-        flex: 6
-      },
-      {
-        title: "サポーターズCoLab",
-        src:
-          "https://img.supporterzcolab.com/thumbs/c3/38/c3389c9e0f55964d2c9ce11e282175c7.png",
+          "https://via.placeholder.com/1000/000000/FFFFFF/?text=Meetup",
         link: "https://supporterzcolab.com/event/891/",
         description:
           "キャリアアップのためのエンジニアにもわかるマーケティング・ブランディングの話をしました",
@@ -585,7 +597,7 @@ export default {
       {
         title: "17卒ミートアップLT",
         src:
-          "https://img.supporterzcolab.com/thumbs/89/76/897651dd1ab0c17d79a31e57f7a228b5.png",
+          "https://via.placeholder.com/1000/000000/FFFFFF/?text=Meetup",
         link: "https://supporterzcolab.com/event/901/",
         description:
           "17卒のエンジニアが集まったLT会でこれまでの自分のキャリアについて話しました",
@@ -616,7 +628,7 @@ export default {
       {
         title: "タピッカソン",
         src:
-          "https://img.supporterzcolab.com/thumbs/94/a2/94a2c74a110247e725123c570459729a.png",
+          "https://via.placeholder.com/1000/000000/FFFFFF/?text=Hackathon",
         link: "https://supporterzcolab.com/event/900/",
         description:
           "主催として登録者100名超えのハッカソンの企画から運営、また個人で当日開発して成果発表まで行いました",
@@ -646,7 +658,7 @@ export default {
       {
         title: "Kotlin入門",
         src:
-          "https://img.supporterzcolab.com/thumbs/0b/46/0b46430d97a328d49c573794868d7db2.png",
+          "https://via.placeholder.com/1000/000000/FFFFFF/?text=Meetup",
         link: "https://supporterzcolab.com/event/949/",
         description: "Javaを使っている方向けのKotlin入門を講義しました",
         source: "https://github.com/sudo5in5k/JavaToKtTrainingForBeginner",
@@ -655,7 +667,7 @@ export default {
       {
         title: "ビアッカソン",
         src:
-          "https://img.supporterzcolab.com/thumbs/e4/7e/e47ed6869dccf5ebda19c047a964a694.png",
+          "https://via.placeholder.com/1000/000000/FFFFFF/?text=Hackathon",
         link: "https://supporterzcolab.com/event/937/",
         description: "主催としてハッカソンの企画から運営ま一貫して行いました",
         source: "https://note.mu/spzcolab/m/m2b98f57c3fc6",
@@ -672,7 +684,7 @@ export default {
       {
         title: "読書会「リーダブルコード」",
         src:
-          "https://img.supporterzcolab.com/thumbs/67/80/6780bc7b9d4ac7b0c4791d811eea7e71.png",
+          "https://via.placeholder.com/1000/000000/FFFFFF/?text=Meetup",
         link: "https://supporterzcolab.com/event/958/",
         description: "主催としてABD読書会のファシリテーターを行いました",
         source: "https://speakerdeck.com/sudo5in5k/abddu-shu-hui",
@@ -681,7 +693,7 @@ export default {
       {
         title: "pandas入門",
         src:
-          "https://img.supporterzcolab.com/thumbs/fd/9e/fd9ea9fa539088adb2f0cdd4789a1c70.png",
+          "https://via.placeholder.com/1000/000000/FFFFFF/?text=Meetup",
         link: "https://supporterzcolab.com/event/971/",
         description: "pandasのデータ加工・整形入門を講義しました",
         source: "https://github.com/sudo5in5k/onlinePandasTutorial",
