@@ -266,11 +266,11 @@
                   <v-layout wrap>
                     <v-flex xs10 class="font-weight-bold my-2">Android App Engineer</v-flex>
                     <v-flex xs10>Kyashアプリ開発に従事</v-flex>
-                    <v-flex xs10>0->1フェーズで初めてのAndroidアプリエンジニア正社員として活動、設計のMVVM化・フルスクラッチの新規機能開発</v-flex>
+                    <v-flex xs10>10->100フェーズでAndroidアプリエンジニアとして新技術導入や機能開発を進めています</v-flex>
                     <v-flex xs10>
                       <ul>
-                        <li>銀行自動入金機能の開発</li>
-                        <li>共有口座の開発</li>
+                        <li><a href="https://support.kyash.co/hc/ja/articles/900003912046-%E9%8A%80%E8%A1%8C%E5%8F%A3%E5%BA%A7%E3%81%8B%E3%82%89%E3%81%AE%E6%8C%87%E5%AE%9A%E6%97%A5%E5%85%A5%E9%87%91%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">銀行自動入金機能</a>の開発</li>
+                        <li><a href="https://www.kyash.co/features/share-account">共有口座機能</a>の開発</li>
                         <li>Jetpack Compose化</li>
                       </ul>
                     </v-flex>
